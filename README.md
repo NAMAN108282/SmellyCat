@@ -8,7 +8,7 @@ This bot handles the day to day new updates of rss of a subreddit and notify on 
 2. Telegram Account
 
 # STEPS:
-1. GET TELEGRAM TOKEN FROM @Botfatherbot
+1. GET TELEGRAM TOKEN FROM BOTFATHER @BotFather
 2. Create a new public channel
 3. Add the bot to that channel as an ADMIN
 4. Clone this project
