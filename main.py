@@ -1,7 +1,7 @@
-#Import modules for the 
-from datetime import timedelta, datetime
+#Import modules
+#from datetime import timedelta, datetime
 from dateutil import parser
-from time import sleep
+#from time import sleep
 import requests
 import feedparser
 
@@ -12,7 +12,7 @@ import feedparser
 BOT_TOKEN ='' # REPLACE WITH YOUR BOT'S TELEGRAM API TOKEN
 CHANNEL_ID =' ' #REPLACE WITH CHANNEL ID OF CHANNELNAME AS @channel_id
 
-REDDIT_RSSFEED_URL = 'https://www.reddit.com/r/worldnews/top.rss?t=day&limit=30'
+REDDIT_RSSFEED_URL = 'https://www.reddit.com/r/worldnews/top.rss?t=day&limit=30' #reddit rssfeed link with filter with top 30 news of the day
 
 
 def send_updates(message):
@@ -31,6 +31,4 @@ def main():
 if __name__ == "__main__":
     while(True):
         main()
-        sleep(20*60)
-
 
