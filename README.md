@@ -13,7 +13,7 @@ This bot handles the day to day new updates of rss of a subreddit and notify on 
 3. Add the bot to that channel as an ADMIN
 4. Clone this project
 5. ADD TELEGRAM TOKEN AND CHANNEL ID TO THE main.py
-6. Deploy it on any node you like(use nohup or screen for running it 24/7)
+6. Deploy it on any node you like(use nohup or screen for running it 24/7) or deploy with a task on pythonanywhere
 
 
 ## project feauture in dev.
