@@ -18,7 +18,6 @@ REDDIT_RSSFEED_URL = 'https://www.reddit.com/r/worldnews/top.rss?t=day&limit=30'
 def send_updates(message):
     requests.get(f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage?chat_id={CHANNEL_ID}&text={message}')
 
-
 def main():
     send_updates("News Update of the Day:")
     rss_new_feed = feedparser.parse(REDDIT_RSSFEED_URL) #RSS FEED URL Pattern: https://www.reddit.com/r/<subreddit>/t>
@@ -29,6 +28,5 @@ def main():
 
 
 if __name__ == "__main__":
-    while(True):
-        main()
+    main()
 
