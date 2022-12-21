@@ -20,7 +20,7 @@ def send_updates(message):
 
 def main():
     send_updates("News Update of the Day:")
-    rss_new_feed = feedparser.parse(REDDIT_RSSFEED_URL) #RSS FEED URL Pattern: https://www.reddit.com/r/<subreddit>/t>
+    rss_new_feed = feedparser.parse(REDDIT_RSSFEED_URL) #RSS FEED URL Pattern: https://www.reddit.com/r/<subreddit>/.rss>
     for entry in rss_new_feed.entries:
         parsed_date = parser.parse(entry.updated)
         send_updates(entry.links[0].href)
